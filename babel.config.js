@@ -40,6 +40,9 @@ const CharMapper = {
 module.exports = {
   presets: ['@babel/env', '@babel/react'],
   plugins: [
+    ['babel-plugin-istanbul', {
+      extension: ['.js'],
+    }],
     '@babel/plugin-transform-runtime',
     '@babel/plugin-syntax-dynamic-import',
     '@babel/plugin-proposal-object-rest-spread',
@@ -53,8 +56,7 @@ module.exports = {
             const files = glob.sync(
               path.resolve(
                 __dirname,
-                `./node_modules/@patternfly/react-core/dist/esm/**/${
-                  mapper[importName] || importName
+                `./node_modules/@patternfly/react-core/dist/esm/**/${mapper[importName] || importName
                 }.js`
               )
             );
@@ -76,8 +78,7 @@ module.exports = {
         },
         '@patternfly/react-charts': {
           transform: (importName) =>
-            `@patternfly/react-charts/dist/esm/components/${
-              CharMapper[importName] || importName
+            `@patternfly/react-charts/dist/esm/components/${CharMapper[importName] || importName
             }/index.js`,
           preventFullImport: true,
           skipDefaultConversion: true,

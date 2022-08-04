@@ -13,6 +13,7 @@ describe('Update image wizard', () => {
     cy.waitFor('.pf-c-title')
     cy.wait(1000)
     cy.get('.pf-c-search-input__text-input', { timeout: 30000 })
+      .wait(3000)
       .should('be.visible')
       .type(this.data.imageName)
 

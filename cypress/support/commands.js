@@ -26,6 +26,7 @@
 
 Cypress.Commands.add('login', () => {
   cy.visit(Cypress.config().baseUrl)
+  cy.wait(1000)
   cy.get('#username-verification').type(Cypress.env('username'))
   cy.get('#login-show-step2').click()
   cy.get('#password').type(Cypress.env('password'))
