@@ -1,4 +1,4 @@
-//chai.use(require('chai-sorted'))
+chai.use(require('chai-sorted'))
 import { really, map } from 'cypress-should-really'
 describe('Images', () => {
   before(() => {
@@ -17,29 +17,29 @@ describe('Images', () => {
     cy.iterateRows('a', 'cy-test')
     cy.clickButton('Clear filters')
 
-    //Filter by Status - Ready
-    cy.selectInDropdownMenu('Status', 'Ready')
-    cy.iterateRows('p', 'Ready')
-    cy.clickButton('Clear filters')
+    // //Filter by Status - Ready
+    // cy.selectInDropdownMenu('Status', 'Ready')
+    // cy.iterateRows('p', 'Ready')
+    // cy.clickButton('Clear filters')
 
-    //Sort by Status - Error
-    cy.selectInDropdownMenu('Status', 'Error')
-    cy.iterateRows('p', 'Error')
-    cy.clickButton('Clear filters')
+    // //Sort by Status - Error
+    // cy.selectInDropdownMenu('Status', 'Error')
+    // cy.iterateRows('p', 'Error')
+    // cy.clickButton('Clear filters')
 
-    cy.testPagination('', 'perPage')
+    // cy.testPagination('', 'perPage')
 
-    cy.wait(2000)
-    cy.get('.pf-m-width-35 > .pf-c-table__button').click()
-    cy.get('tbody [data-label="Name"]').wait(3000).should(
-      really(map('innerText'), 'be.ascending')
-    )
+    // cy.wait(2000)
+    // cy.get('.pf-m-width-35 > .pf-c-table__button').click()
+    // cy.get('tbody [data-label="Name"]').wait(3000).should(
+    //   really(map('innerText'), 'be.sorted', { descending: false, })
+    // )
 
-    cy.get('.pf-m-width-35 > .pf-c-table__button').wait(3000).click()
-    cy.get('tbody [data-label="Name"]')
-      .should(
-        really(map('innerText'), 'be.sorted', { descending: true, })
-      )
+    // cy.get('.pf-m-width-35 > .pf-c-table__button').wait(3000).click()
+    // cy.get('tbody [data-label="Name"]')
+    //   .should(
+    //     really(map('innerText'), 'be.sorted', { descending: true, })
+    //   )
 
   }) 
 })

@@ -1,0 +1,1172 @@
+{
+  "/home/acruzgon/edge-frontend/src/App.js": {
+    "path": "/home/acruzgon/edge-frontend/src/App.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/AppEntry.js": {
+    "path": "/home/acruzgon/edge-frontend/src/AppEntry.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/bootstrap-dev.js": {
+    "path": "/home/acruzgon/edge-frontend/src/bootstrap-dev.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/bootstrap.js": {
+    "path": "/home/acruzgon/edge-frontend/src/bootstrap.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/entry-dev.js": {
+    "path": "/home/acruzgon/edge-frontend/src/entry-dev.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/entry.js": {
+    "path": "/home/acruzgon/edge-frontend/src/entry.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/api/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/api/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/AuthModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/AuthModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/AvailableImagesTile.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/AvailableImagesTile.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/BuildModalReview.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/BuildModalReview.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/CmpLoader.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/CmpLoader.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/DeviceDetail.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/DeviceDetail.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/DeviceSummaryTile.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/DeviceSummaryTile.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/Empty.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/Empty.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/GreenbootStatus.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/GreenbootStatus.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/ImageCreator.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/ImageCreator.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/ImageInformationCard.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/ImageInformationCard.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/Modal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/Modal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/ReviewSection.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/ReviewSection.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/SearchInput.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/SearchInput.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/SecureIcon.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/SecureIcon.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/Status.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/Status.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/StatusIcon.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/StatusIcon.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/Tiles.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/Tiles.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/TitleWithPopover.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/TitleWithPopover.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/constants/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/constants/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/constants/routeMapper.js": {
+    "path": "/home/acruzgon/edge-frontend/src/constants/routeMapper.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/constants/status.js": {
+    "path": "/home/acruzgon/edge-frontend/src/constants/status.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/hooks/useApi.js": {
+    "path": "/home/acruzgon/edge-frontend/src/hooks/useApi.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/action-types.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/action-types.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/actions.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/actions.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/canariesInfo.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/canariesInfo.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/createImage.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/createImage.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/deviceDetail.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/deviceDetail.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/deviceSummary.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/deviceSummary.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/deviceTable.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/deviceTable.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/devicesInfo.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/devicesInfo.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/edgeImagePackages.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/edgeImagePackages.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/edgeImageSets.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/edgeImageSets.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/edgeImages.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/edgeImages.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/groupDevicesInfo.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/groupDevicesInfo.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/groups.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/groups.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/groupsDetail.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/groupsDetail.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/imageDetail.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/imageDetail.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/imageSetDetail.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/imageSetDetail.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/imageStatus.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/imageStatus.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/images.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/images.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/inventory-table.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/inventory-table.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/polling.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/polling.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/reducers.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/reducers.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/store/threshold.js": {
+    "path": "/home/acruzgon/edge-frontend/src/store/threshold.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/utils/apiWithToast.js": {
+    "path": "/home/acruzgon/edge-frontend/src/utils/apiWithToast.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/utils/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/utils/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Canaries/Canaries.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Canaries/Canaries.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/DeviceDetail/DeviceDetail.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/DeviceDetail/DeviceDetail.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/DeviceDetail/DeviceDetailTabs.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/DeviceDetail/DeviceDetailTabs.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/DeviceDetail/UpdateImageModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/DeviceDetail/UpdateImageModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/DeviceDetail/Vulnerability.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/DeviceDetail/Vulnerability.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Devices/AddDeviceModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Devices/AddDeviceModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Devices/AddSystemsToGroupModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Devices/AddSystemsToGroupModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Devices/DeviceTable.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Devices/DeviceTable.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Devices/Inventory.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Devices/Inventory.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Devices/RemoveDeviceModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Devices/RemoveDeviceModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Devices/UpdateDeviceModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Devices/UpdateDeviceModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Groups/CreateGroupModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Groups/CreateGroupModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Groups/DeleteGroupModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Groups/DeleteGroupModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Groups/GroupTable.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Groups/GroupTable.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Groups/Groups.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Groups/Groups.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Groups/RenameGroupModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Groups/RenameGroupModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/GroupsDetail/GroupsDetail.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/GroupsDetail/GroupsDetail.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/CreateImageWizard.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/CreateImageWizard.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/ImageSetsTable.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/ImageSetsTable.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/ImageTable.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/ImageTable.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/Images.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/Images.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/UpdateImageWizard.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/UpdateImageWizard.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/DetailsHeader.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/DetailsHeader.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageDetail.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageDetail.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageDetailActions.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageDetailActions.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageDetailTab.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageDetailTab.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageDetailTabs.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageDetailTabs.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImagePackagesTab.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImagePackagesTab.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageVersionDetail.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageVersionDetail.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageVersionsTab.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManagerDetail/ImageVersionsTab.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/LearningResources/LearningResources.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/LearningResources/LearningResources.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/LearningResources/Quickstarts.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/LearningResources/Quickstarts.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Repositories/Repositories.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Repositories/Repositories.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Repositories/RepositoryHeader.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Repositories/RepositoryHeader.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Repositories/RepositoryTable.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Repositories/RepositoryTable.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Repositories/TableHeader.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Repositories/TableHeader.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/api/devices/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/api/devices/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/api/groups/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/api/groups/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/api/images/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/api/images/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/api/repositories/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/api/repositories/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/CustomPackageTextArea.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/CustomPackageTextArea.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/CustomSubmitButtons.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/CustomSubmitButtons.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/ImageOutputCheckbox.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/ImageOutputCheckbox.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/Packages.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/Packages.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/RegistrationCreds.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/RegistrationCreds.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/ReviewStep.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/ReviewStep.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/SSHInputField.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/SSHInputField.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/WizardRepositoryTable.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/WizardRepositoryTable.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/componentTypes.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/componentTypes.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/validators.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/validators.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/general-table/BulkSelect.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/general-table/BulkSelect.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/general-table/FilterChips.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/general-table/FilterChips.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/general-table/FilterControls.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/general-table/FilterControls.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/general-table/FilterDropdown.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/general-table/FilterDropdown.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/general-table/FilterInput.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/general-table/FilterInput.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/general-table/GeneralTable.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/general-table/GeneralTable.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/general-table/ToolbarFooter.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/general-table/ToolbarFooter.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/general-table/ToolbarHeader.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/general-table/ToolbarHeader.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/general-table/ToolbarKebab.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/general-table/ToolbarKebab.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/general-table/createFilterValues.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/general-table/createFilterValues.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/customPackage.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/customPackage.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/imageOutput.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/imageOutput.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/imageSetDetails.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/imageSetDetails.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/index.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/packages.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/packages.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/registration.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/registration.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/repositories.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/repositories.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/review.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/review.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/updateDetails.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/ImageManager/steps/updateDetails.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Repositories/modals/AddModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Repositories/modals/AddModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Repositories/modals/EditModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Repositories/modals/EditModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/Routes/Repositories/modals/RemoveModal.js": {
+    "path": "/home/acruzgon/edge-frontend/src/Routes/Repositories/modals/RemoveModal.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/home/acruzgon/edge-frontend/src/components/form/constants/reservedUsernames.js": {
+    "path": "/home/acruzgon/edge-frontend/src/components/form/constants/reservedUsernames.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  }
+}
