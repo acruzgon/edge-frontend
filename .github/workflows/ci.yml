@@ -13,11 +13,11 @@ jobs:
       - name: Lint
         run: npm run lint  
       
-      - name: Start the app
-        run: BETA=true npm run start:proxy &
+      #- name: Start the app
+      #  run: BETA=true npm run start:proxy &
 
       - name: Run Cypress tests 🧪
-        run: npx cypress run --e2e -- --record
+        run: npx cypress run --e2e --record
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
 
