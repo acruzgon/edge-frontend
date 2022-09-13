@@ -15,6 +15,7 @@ function getConfigurationByFile(file) {
 }
 
 module.exports = defineConfig({
+  projectId: 'g2uj9h',
   chromeWebSecurity: false,
   pageLoadTimeout: 120000,
 
