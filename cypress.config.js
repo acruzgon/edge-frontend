@@ -18,13 +18,21 @@ module.exports = defineConfig({
   projectId: 'g2uj9h',
   chromeWebSecurity: false,
   pageLoadTimeout: 120000,
+  env: {
+    username: "insights-qa",
+    password: "redhatqa",
+    }, 
 
+  e2e: {  
+    baseUrl: "https://console.stage.redhat.com/beta/edge",
 
-  e2e: {
     setupNodeEvents(on, config) {
       // accept a configFile value or use local by default
-      const file = config.env.configFile || "local";
-      return getConfigurationByFile(file);
+
+
+      //const file = config.env.configFile || "local";
+      //return getConfigurationByFile(file);
+      return config;
     },
   },
 

@@ -17,7 +17,7 @@ jobs:
         run: BETA=true npm run start:proxy &
 
       - name: Run Cypress tests 🧪
-        run: npx cypress run --env configFile=stage --e2e -- --record
+        run: npx cypress run --e2e -- --record
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
 
