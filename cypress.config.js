@@ -24,7 +24,7 @@ module.exports = defineConfig({
     }, 
 
   e2e: {  
-    baseUrl: "https://console.stage.redhat.com/beta/edge",
+    baseUrl: "https://stage.foo.redhat.com:1337/beta/edge",
 
     setupNodeEvents(on, config) {
       // accept a configFile value or use local by default
