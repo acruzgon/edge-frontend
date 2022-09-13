@@ -14,7 +14,7 @@ jobs:
         run: npm run lint  
       
       - name: Start the app
-        run: BETA=true npm run start:proxy
+        run: BETA=true npm run start:proxy &
 
       - name: Run Cypress tests 🧪
         run: npx cypress run --env configFile=stage --e2e -- --record
