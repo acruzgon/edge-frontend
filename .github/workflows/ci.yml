@@ -17,6 +17,7 @@ jobs:
         run: BETA=true npm run start:proxy &
 
       - name: Run Cypress tests 🧪
+        wait-on: 'https://stage.foo.redhat.com:1337/beta/edge'
         run: npx cypress run --e2e --record
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
