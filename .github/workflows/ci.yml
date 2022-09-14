@@ -36,4 +36,4 @@ jobs:
         uses: cypress-io/github-action@v4
         timeout-minutes: 10
         with:
-          start: BETA=true npm run start:proxy &
+          start: npm run start:proxy &
