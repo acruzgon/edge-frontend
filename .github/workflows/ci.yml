@@ -40,7 +40,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           record: true
-          start: (npm run start:proxy &)
+          start: "npm run start:proxy"
           wait-on: 'https://stage.foo.redhat.com:1337/edge'
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
