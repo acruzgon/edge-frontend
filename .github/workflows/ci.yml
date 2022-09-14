@@ -32,10 +32,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Install dependencies
-        run: npm ci
-      #- name: Start the app
-      #  run: BETA=true npm run start:proxy &
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
