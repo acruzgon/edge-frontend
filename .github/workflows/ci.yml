@@ -1,26 +1,39 @@
-name: ci
-on: [push]
-jobs:
-  build-and-test:
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Checkout 🛎
-        uses: actions/checkout@v2
+# name: ci
+# on: [push]
+# jobs:
+#   build-and-test:
+#     runs-on: ubuntu-20.04
+#     steps:
+#       - name: Checkout 🛎
+#         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: npm ci
+#       - name: Install dependencies
+#         run: npm ci
 
-      - name: Lint
-        run: npm run lint  
+#       - name: Lint
+#         run: npm run lint  
       
-      - name: Start the app
-        run: BETA=true npm run start:proxy &
+#       - name: Start the app
+#         run: BETA=true npm run start:proxy &
 
-      # - name: Wait for URL
-      #   run: npx wait-on https://stage.foo.redhat.com:1337/beta/edge
+#       - name: Wait for URL
+#         run: npx wait-on https://stage.foo.redhat.com:1337/beta/edge
 
-      #name: Run Cypress tests 🧪
-        run: npx cypress run --e2e --record
-        env:
-          CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
+#       - name: Run Cypress tests 🧪
+#         run: npx cypress run --e2e --record
+#         env:
+#           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
 
+name: Using Cypress GH Action
+on: push
+jobs:
+  single-run:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        timeout-minutes: 10
+        with:
+          start: BETA=true npm run start:proxy &
