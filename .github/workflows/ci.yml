@@ -48,3 +48,4 @@ jobs:
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
           NODE_TLS_REJECT_UNAUTHORIZED: 0
+          BETA: true
