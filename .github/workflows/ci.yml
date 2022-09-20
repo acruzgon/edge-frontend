@@ -47,3 +47,4 @@ jobs:
           wait-on: 'https://stage.foo.redhat.com:1337/edge'
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
+          NODE_TLS_REJECT_UNAUTHORIZED: 0
