@@ -9,14 +9,8 @@ import { Tooltip } from '@patternfly/react-core';
 import CustomEmptyState from '../../components/Empty';
 import { useHistory } from 'react-router-dom';
 import { emptyStateNoFliters } from '../../utils';
-import DeviceStatus from '../../components/Status';
-
-const getDeviceStatus = (deviceStatus, isUpdateAvailable) =>
-  deviceStatus === 'UPDATING'
-    ? 'updating'
-    : isUpdateAvailable
-    ? 'updateAvailable'
-    : 'running';
+import DeviceStatus, { getDeviceStatus } from '../../components/Status';
+import RetryUpdatePopover from './RetryUpdatePopover';
 
 const defaultFilters = [
   {
@@ -68,7 +62,7 @@ const columnNames = [
   },
 ];
 
-const createRows = (devices, hasLinks) => {
+const createRows = (devices, hasLinks, fetchDevices) => {
   return devices?.map((device) => {
     let { DeviceName, DeviceGroups } = device;
 
@@ -81,8 +75,13 @@ const createRows = (devices, hasLinks) => {
       ImageSetID,
       // ImageID,
       Status,
+      DispatcherStatus,
     } = device;
-
+    const deviceStatus = getDeviceStatus(
+      Status,
+      UpdateAvailable,
+      DispatcherStatus
+    );
     if (DeviceName === '') {
       // needs to be fixed with proper name in sync with inv
       DeviceName = 'localhost';
@@ -114,7 +113,11 @@ const createRows = (devices, hasLinks) => {
         id: DeviceUUID,
         display_name: DeviceName,
         updateImageData: UpdateAvailable,
-        deviceStatus: getDeviceStatus(Status, UpdateAvailable),
+        deviceStatus: getDeviceStatus(
+          Status,
+          UpdateAvailable,
+          DispatcherStatus
+        ),
         imageSetId: ImageSetID,
         imageName: ImageName,
         deviceGroups: DeviceGroups,
@@ -159,9 +162,31 @@ const createRows = (devices, hasLinks) => {
           title: LastSeen ? <DateFormat date={LastSeen} /> : 'Unknown',
         },
         {
-          title: (
-            <DeviceStatus type={getDeviceStatus(Status, UpdateAvailable)} />
-          ),
+          title:
+            deviceStatus === 'error' || deviceStatus === 'unresponsive' ? (
+              <RetryUpdatePopover
+                lastSeen={LastSeen}
+                fetchDevices={fetchDevices}
+                device={device}
+              >
+                <DeviceStatus
+                  type={
+                    deviceStatus === 'error'
+                      ? 'errorWithExclamationCircle'
+                      : deviceStatus
+                  }
+                  isLink={true}
+                />
+              </RetryUpdatePopover>
+            ) : (
+              <DeviceStatus
+                type={
+                  deviceStatus === 'error'
+                    ? 'errorWithExclamationCircle'
+                    : deviceStatus
+                }
+              />
+            ),
         },
       ],
     };
@@ -171,6 +196,7 @@ const createRows = (devices, hasLinks) => {
 const DeviceTable = ({
   hasCheckbox = false,
   selectedItems,
+  selectedItemsUpdateable,
   skeletonRowQuantity,
   data,
   count,
@@ -182,6 +208,7 @@ const DeviceTable = ({
   setIsAddModalOpen,
   handleAddDevicesToGroup,
   handleRemoveDevicesFromGroup,
+  handleUpdateSelected,
   hasModalSubmitted,
   setHasModalSubmitted,
   fetchDevices,
@@ -190,6 +217,7 @@ const DeviceTable = ({
 }) => {
   const canBeRemoved = setRemoveModal;
   const canBeAdded = setIsAddModalOpen;
+  const canBeUpdated = isSystemsView;
   const history = useHistory();
 
   const actionResolver = (rowData) => {
@@ -268,7 +296,9 @@ const DeviceTable = ({
   };
 
   const areActionsDisabled = (rowData) =>
-    rowData.rowInfo?.deviceStatus !== 'updateAvailable';
+    !rowData.rowInfo?.UpdateAvailable &&
+    (rowData.rowInfo?.deviceStatus === 'updating' ||
+      rowData.rowInfo?.deviceStatus === 'upToDate');
 
   return (
     <>
@@ -301,22 +331,36 @@ const DeviceTable = ({
             hasError: hasError,
           }}
           columnNames={columnNames}
-          rows={createRows(data || [], isAddSystemsView || isSystemsView)}
+          rows={createRows(
+            data || [],
+            isAddSystemsView || isSystemsView,
+            fetchDevices
+          )}
           actionResolver={actionResolver}
           defaultSort={{ index: 3, direction: 'desc' }}
           toolbarButtons={
-            canBeAdded
+            (canBeAdded
               ? [
                   {
                     title: 'Add systems',
                     click: () => setIsAddModalOpen(true),
                   },
                 ]
-              : []
+              : [],
+            canBeUpdated
+              ? [
+                  {
+                    isDisabled: !selectedItemsUpdateable,
+                    title: 'Update',
+                    id: 'toolbar-update-button',
+                    click: () => handleUpdateSelected(),
+                  },
+                ]
+              : [])
           }
           hasCheckbox={hasCheckbox}
-          skeletonRowQuantity={skeletonRowQuantity}
           selectedItems={selectedItems}
+          skeletonRowQuantity={skeletonRowQuantity}
           kebabItems={kebabItems}
           hasModalSubmitted={hasModalSubmitted}
           setHasModalSubmitted={setHasModalSubmitted}
@@ -325,6 +369,7 @@ const DeviceTable = ({
     </>
   );
 };
+
 DeviceTable.propTypes = {
   imageData: PropTypes.object,
   urlParam: PropTypes.string,
@@ -335,6 +380,7 @@ DeviceTable.propTypes = {
   hasCheckbox: PropTypes.bool,
   setIsModalOpen: PropTypes.func,
   selectedItems: PropTypes.func,
+  selectedItemsUpdateable: PropTypes.bool,
   reload: PropTypes.bool,
   setReload: PropTypes.func,
   data: PropTypes.array,
@@ -350,6 +396,7 @@ DeviceTable.propTypes = {
   setHasModalSubmitted: PropTypes.func,
   handleAddDevicesToGroup: PropTypes.func,
   handleRemoveDevicesFromGroup: PropTypes.func,
+  handleUpdateSelected: PropTypes.func,
   fetchDevices: PropTypes.func,
   isSystemsView: PropTypes.bool,
   isAddSystemsView: PropTypes.bool,
