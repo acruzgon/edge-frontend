@@ -1,21 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import ToolbarHeader from './ToolbarHeader';
-import ToolbarFooter from './ToolbarFooter';
-import createFilterValues from '../../components/general-table/createFilterValues';
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
+import React, { useState, useEffect } from "react";
+import ToolbarHeader from "./ToolbarHeader";
+import ToolbarFooter from "./ToolbarFooter";
+import createFilterValues from "../../components/general-table/createFilterValues";
 import {
   Table,
   TableHeader,
   TableBody,
   sortable,
-} from '@patternfly/react-table';
-import { Skeleton } from '@patternfly/react-core';
-import PropTypes from 'prop-types';
-import CustomEmptyState from '../Empty';
-import { useDispatch } from 'react-redux';
-import { transformSort } from '../../utils';
-import BulkSelect from './BulkSelect';
-import { useHistory } from 'react-router-dom';
-import { stateToUrlSearch } from '../../utils';
+} from "@patternfly/react-table";
+import { Skeleton } from "@patternfly/react-core";
+import PropTypes from "prop-types";
+import CustomEmptyState from "../Empty";
+import { useDispatch } from "react-redux";
+import { transformSort } from "../../utils";
+import BulkSelect from "./BulkSelect";
+import { useHistory } from "react-router-dom";
+import { stateToUrlSearch } from "../../utils";
 
 const filterParams = (chipsArray) => {
   const filterParamsObj =
@@ -23,7 +25,7 @@ const filterParams = (chipsArray) => {
       ? chipsArray.reduce((acc, filter) => {
           if (acc[filter.key.toLowerCase()]) {
             const returnAcc =
-              typeof acc[filter.key.toLowerCase()] === 'string'
+              typeof acc[filter.key.toLowerCase()] === "string"
                 ? [acc[filter.key.toLowerCase()]]
                 : [...acc[filter.key.toLowerCase()]];
             return {
@@ -70,9 +72,12 @@ const GeneralTable = ({
   hasModalSubmitted,
   setHasModalSubmitted,
   isUseApi,
+  hasFilters = false,
 }) => {
   const defaultCheckedRows = initSelectedItems ? initSelectedItems : [];
-  const [filterValues, setFilterValues] = useState(createFilterValues(filters));
+  const [filterValues, setFilterValues] = hasFilters
+    ? useState(createFilterValues(filters))
+    : [];
   const [chipsArray, setChipsArray] = useState([]);
   const [sortBy, setSortBy] = useState(defaultSort);
   const [perPage, setPerPage] = useState(20);
@@ -84,12 +89,12 @@ const GeneralTable = ({
   useEffect(() => {
     if (
       //!history.location.search.includes('add_system_modal=true') &&
-      !history.location.search.includes('create_image=true') &&
-      !history.location.search.includes('update_image=true')
+      !history.location.search.includes("create_image=true") &&
+      !history.location.search.includes("update_image=true")
     ) {
       history.push({
         pathname: history.location.pathname,
-        search: stateToUrlSearch('has_filters=true', chipsArray.length > 0),
+        search: stateToUrlSearch("has_filters=true", chipsArray.length > 0),
       });
     }
 
@@ -105,9 +110,9 @@ const GeneralTable = ({
         }
       : null;
 
-    if (query?.status === 'updateAvailable') {
+    if (query?.status === "updateAvailable") {
       delete query.status;
-      query.update_available = 'true';
+      query.update_available = "true";
     }
 
     if (isUseApi) {
@@ -135,60 +140,65 @@ const GeneralTable = ({
 
   //Used for repos until the api can sort and filter
   const filteredByName = () => {
-    const activeFilters = filterValues.filter(
-      (filter) =>
-        (filter?.type === 'text' && filter?.value !== '') ||
-        (filter?.type === 'checkbox' &&
-          filter?.value.find((checked) => checked.isChecked))
-    );
-    const filteredArray = rows.filter((row) => {
-      if (activeFilters.length > 0) {
-        return activeFilters?.every((filter) => {
-          if (filter.type === 'text') {
-            return row.noApiSortFilter[
-              columnNames.findIndex((row) => row.title === filter.label)
-            ]
-              .toLowerCase()
-              .includes(filter.value.toLowerCase());
-          } else if (filter.type === 'checkbox') {
-            return filter.value.some(
-              (value) =>
-                value.isChecked &&
-                row.noApiSortFilter[
-                  columnNames.findIndex((row) => row.title === filter.label) - 1
-                ].toLowerCase() === value.value.toLowerCase()
-            );
-          }
-        });
-      } else {
-        return row;
-      }
-    });
-    return filteredArray;
+    if (hasFilters) {
+      const activeFilters = filterValues.filter(
+        (filter) =>
+          (filter?.type === "text" && filter?.value !== "") ||
+          (filter?.type === "checkbox" &&
+            filter?.value.find((checked) => checked.isChecked))
+      );
+      const filteredArray = rows.filter((row) => {
+        if (activeFilters.length > 0) {
+          return activeFilters?.every((filter) => {
+            if (filter.type === "text") {
+              return row.noApiSortFilter[
+                columnNames.findIndex((row) => row.title === filter.label)
+              ]
+                .toLowerCase()
+                .includes(filter.value.toLowerCase());
+            } else if (filter.type === "checkbox") {
+              return filter.value.some(
+                (value) =>
+                  value.isChecked &&
+                  row.noApiSortFilter[
+                    columnNames.findIndex((row) => row.title === filter.label) -
+                      1
+                  ].toLowerCase() === value.value.toLowerCase()
+              );
+            }
+          });
+        } else {
+          return row;
+        }
+      });
+      return filteredArray;
+    }
   };
 
   const filteredByNameRows = !apiFilterSort && filteredByName();
 
   //non-api sort function
   const sortedByDirection = (rows) =>
-    rows.sort((a, b) => {
-      const index = hasCheckbox ? sortBy.index - 1 : sortBy.index;
-      return typeof a?.noApiSortFilter[index] === 'number'
-        ? sortBy.direction === 'asc'
-          ? a?.noApiSortFilter[index] - b?.noApiSortFilter[index]
-          : b?.noApiSortFilter[index] - a?.noApiSortFilter[index]
-        : sortBy.direction === 'asc'
-        ? a?.noApiSortFilter[index].localeCompare(
-            b?.noApiSortFilter[index],
-            undefined,
-            { sensitivity: 'base' }
-          )
-        : b?.noApiSortFilter[index].localeCompare(
-            a?.noApiSortFilter[index],
-            undefined,
-            { sensitivity: 'base' }
-          );
-    });
+    apiFilterSort
+      ? rows.sort((a, b) => {
+          const index = hasCheckbox ? sortBy.index - 1 : sortBy.index;
+          return typeof a?.noApiSortFilter[index] === "number"
+            ? sortBy.direction === "asc"
+              ? a?.noApiSortFilter[index] - b?.noApiSortFilter[index]
+              : b?.noApiSortFilter[index] - a?.noApiSortFilter[index]
+            : sortBy.direction === "asc"
+            ? a?.noApiSortFilter[index].localeCompare(
+                b?.noApiSortFilter[index],
+                undefined,
+                { sensitivity: "base" }
+              )
+            : b?.noApiSortFilter[index].localeCompare(
+                a?.noApiSortFilter[index],
+                undefined,
+                { sensitivity: "base" }
+              );
+        })
+      : "";
 
   const nonApiCount = !apiFilterSort
     ? sortedByDirection(filteredByNameRows)?.length
@@ -199,8 +209,9 @@ const GeneralTable = ({
     setSortBy({ index, direction });
   };
 
-  const toShowSort =
-    isLoading || hasError || (count?.length > 0 && filters.length > 0);
+  const toShowSort = hasFilters
+    ? isLoading || hasError || (count?.length > 0 && filters.length > 0)
+    : "";
 
   const columns = columnNames.map((columnName) => ({
     title: columnName.title,
@@ -292,15 +303,15 @@ const GeneralTable = ({
               <CustomEmptyState
                 data-testid="general-table-empty-state-no-match"
                 bgColor="white"
-                icon={emptyFilterState?.icon ?? 'search'}
-                title={emptyFilterState?.title ?? 'No match found'}
-                body={emptyFilterState?.body ?? ''}
+                icon={emptyFilterState?.icon ?? "search"}
+                title={emptyFilterState?.title ?? "No match found"}
+                body={emptyFilterState?.body ?? ""}
                 secondaryActions={
                   toggleAction
                     ? []
                     : [
                         {
-                          title: 'Clear all filters',
+                          title: "Clear all filters",
                           onClick: () =>
                             setFilterValues(createFilterValues(filters)),
                         },
@@ -322,36 +333,40 @@ const GeneralTable = ({
     ? checkboxRows()
     : filteredRows;
 
+  //const tableRows = rows;
+
   return (
     <>
-      <ToolbarHeader
-        count={apiFilterSort ? count : nonApiCount}
-        toolbarButtons={toolbarButtons}
-        filters={filters}
-        filterValues={filterValues}
-        setFilterValues={setFilterValues}
-        chipsArray={chipsArray}
-        setChipsArray={setChipsArray}
-        isLoading={isLoading}
-        perPage={perPage}
-        setPerPage={setPerPage}
-        page={page}
-        setPage={setPage}
-        toggleButton={toggleButton}
-        toggleAction={toggleAction}
-        toggleState={toggleState}
-        kebabItems={kebabItems}
-      >
-        {!isLoading && hasCheckbox ? (
-          <BulkSelect
-            checkedRows={checkedRows}
-            handleBulkSelect={handleBulkSelect}
-            handlePageSelect={handlePageSelect}
-            handleNoneSelect={handleNoneSelect}
-            displayedRowsLength={filteredRows.length}
-          />
-        ) : null}
-      </ToolbarHeader>
+      {hasFilters ? (
+        <ToolbarHeader
+          count={apiFilterSort ? count : nonApiCount}
+          toolbarButtons={toolbarButtons}
+          filters={filters}
+          filterValues={filterValues}
+          setFilterValues={setFilterValues}
+          chipsArray={chipsArray}
+          setChipsArray={setChipsArray}
+          isLoading={isLoading}
+          perPage={perPage}
+          setPerPage={setPerPage}
+          page={page}
+          setPage={setPage}
+          toggleButton={toggleButton}
+          toggleAction={toggleAction}
+          toggleState={toggleState}
+          kebabItems={kebabItems}
+        >
+          {!isLoading && hasCheckbox ? (
+            <BulkSelect
+              checkedRows={checkedRows}
+              handleBulkSelect={handleBulkSelect}
+              handlePageSelect={handlePageSelect}
+              handleNoneSelect={handleNoneSelect}
+              displayedRowsLength={filteredRows.length}
+            />
+          ) : null}
+        </ToolbarHeader>
+      ) : null}
       <Table
         data-testid="general-table-testid"
         variant="compact"
@@ -368,15 +383,17 @@ const GeneralTable = ({
         <TableHeader />
         <TableBody />
       </Table>
-      <ToolbarFooter
-        isLoading={isLoading}
-        count={apiFilterSort ? count : nonApiCount}
-        setFilterValues={setFilterValues}
-        perPage={perPage}
-        setPerPage={setPerPage}
-        page={page}
-        setPage={setPage}
-      />
+      {hasFilters ? (
+        <ToolbarFooter
+          isLoading={isLoading}
+          count={apiFilterSort ? count : nonApiCount}
+          setFilterValues={setFilterValues}
+          perPage={perPage}
+          setPerPage={setPerPage}
+          page={page}
+          setPage={setPage}
+        />
+      ) : null}
     </>
   );
 };
@@ -405,6 +422,7 @@ GeneralTable.propTypes = {
   setHasModalSubmitted: PropTypes.func,
   initSelectedItems: PropTypes.array,
   isUseApi: PropTypes.bool,
+  hasFilters: PropTypes.bool,
 };
 
 GeneralTable.defaultProps = {
